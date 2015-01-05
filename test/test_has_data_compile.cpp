@@ -15,7 +15,10 @@ int main()
   BOOST_TTI_HAS_DATA_GEN(aMember)<AType,long> aVar;
   BOOST_TTI_HAS_DATA_GEN(SomeStaticData)<AnotherType,long> aVar2;
   BOOST_TTI_HAS_DATA_GEN(someDataMember)<AnotherType,double> aVar3;
-  
+  (void)aVar;
+  (void)aVar2;
+  (void)aVar3;
+
   BOOST_MPL_ASSERT((BOOST_TTI_HAS_DATA_GEN(AnInt)<AType,int>));
   BOOST_MPL_ASSERT_NOT((BOOST_TTI_HAS_DATA_GEN(SomeStaticData)<AnotherType,float>));
   BOOST_MPL_ASSERT((BOOST_TTI_HAS_DATA_GEN(AnInt)<AnotherType,long>));

@@ -14,6 +14,8 @@ int main()
   
   BOOST_TTI_HAS_TYPE_GEN(AnIntType)<AnotherType> aVar1;
   BOOST_TTI_HAS_TYPE_GEN(NoOtherType)<AType> aVar2;
+  (void)aVar1;
+  (void)aVar2;
   
   // Compile time asserts
   
