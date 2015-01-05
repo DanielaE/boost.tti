@@ -16,6 +16,10 @@ int main()
   HaveAnotherMT<AnotherType> aVar2;
   BOOST_TTI_HAS_TEMPLATE_GEN(SomeMemberTemplate)<AType> aVar3;
   BOOST_TTI_HAS_TEMPLATE_GEN(TemplateNotExist)<AType> aVar4;
+  (void)aVar;
+  (void)aVar2;
+  (void)aVar3;
+  (void)aVar4;
   
   // Compile time asserts
   
