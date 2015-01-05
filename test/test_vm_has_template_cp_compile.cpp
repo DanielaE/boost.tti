@@ -15,6 +15,7 @@ int main()
   // You can always instantiate without compiler errors
   
   BOOST_TTI_HAS_TEMPLATE_GEN(TemplateNotExist)<AnotherType> aVar1;
+  (void)aVar1;
   
   // Compile time asserts
   

@@ -13,7 +13,8 @@ int main()
   // You can always instantiate without compiler errors even if the member function does not exist
   
   BOOST_TTI_HAS_MEMBER_FUNCTION_GEN(someFunctionMember)<AnotherType,double,boost::mpl::vector<short,short,long,int>,boost::function_types::const_qualified> aVar1;
-  
+  (void)aVar1;
+
   // Use const enclosing type
   
   BOOST_MPL_ASSERT((BOOST_TTI_HAS_MEMBER_FUNCTION_GEN(AnotherConstFunction)<const AnotherType,int,boost::mpl::vector<AType *, short> >));

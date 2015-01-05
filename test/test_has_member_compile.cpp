@@ -13,7 +13,8 @@ int main()
   // You can always instantiate without compiler errors
   
   BOOST_TTI_HAS_MEMBER_FUNCTION_GEN(someFunctionMember)<double (AnotherType::*)(short,short,long,int)> aVar3;
-  
+  (void)aVar3;
+
   // Compile time asserts
   
   BOOST_MPL_ASSERT((BOOST_TTI_HAS_MEMBER_FUNCTION_GEN(VoidFunction)<void (AType::*)()>));
