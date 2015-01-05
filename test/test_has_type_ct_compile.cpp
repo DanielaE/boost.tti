@@ -17,6 +17,8 @@ int main()
   
   TheInteger<AType::BType,boost::is_same<short,_> > aVar;
   BOOST_TTI_HAS_TYPE_GEN(NoOtherType)<AnotherType,boost::is_same<double,_> > aVar2;
+  (void)aVar;
+  (void)aVar2;
   
   // Compile time asserts
   
