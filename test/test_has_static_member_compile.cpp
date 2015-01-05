@@ -14,7 +14,9 @@ int main()
   
   TheTIntFunction<AType,void (long,double)> aVar;
   Pickedname<AnotherType,AType (long,long)> aVar3;
-  
+  (void)aVar;
+  (void)aVar3;
+
   // Compile time asserts
   
   BOOST_MPL_ASSERT((HaveTheSIntFunction<AType,int (long,double)>));

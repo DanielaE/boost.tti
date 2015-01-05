@@ -14,6 +14,8 @@ int main()
   
   BOOST_TTI_HAS_MEMBER_DATA_GEN(aMember)<AType,long> aVar;
   BOOST_TTI_HAS_MEMBER_DATA_GEN(someDataMember)<AnotherType,double> aVar2;
+  (void)aVar;
+  (void)aVar2;
   
   // Compile time asserts
   
